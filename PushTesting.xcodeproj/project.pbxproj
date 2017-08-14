@@ -26,6 +26,7 @@
 		BA1ADB0B1F40FD3900AC620F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1ADB0D1F40FD3900AC620F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1ADB131F40FDDE00AC620F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA6B0A521F42284300FF5D64 /* PushTesting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushTesting.entitlements; sourceTree = "<group>"; };
 		D16AB60A03C9ACF2DB69F1C1 /* Pods_PushTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC0930F75269F2B6FA8D6F8 /* Pods-PushTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTesting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushTesting/Pods-PushTesting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +81,7 @@
 		BA1ADB001F40FD3900AC620F /* PushTesting */ = {
 			isa = PBXGroup;
 			children = (
+				BA6B0A521F42284300FF5D64 /* PushTesting.entitlements */,
 				BA1ADB011F40FD3900AC620F /* AppDelegate.swift */,
 				BA1ADB031F40FD3900AC620F /* ViewController.swift */,
 				BA1ADB051F40FD3900AC620F /* Main.storyboard */,
@@ -128,6 +130,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = BR4H78C3XC;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -343,6 +350,7 @@
 			baseConfigurationReference = DAC0930F75269F2B6FA8D6F8 /* Pods-PushTesting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushTesting/PushTesting.entitlements;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
 				INFOPLIST_FILE = PushTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -357,6 +365,7 @@
 			baseConfigurationReference = 79960681149B6E7863DE66BC /* Pods-PushTesting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushTesting/PushTesting.entitlements;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
 				INFOPLIST_FILE = PushTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -385,6 +394,7 @@
 				BA1ADB121F40FD3900AC620F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

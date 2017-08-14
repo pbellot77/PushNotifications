@@ -9,5 +9,6 @@ target 'PushTesting' do
 
   # Pods for PushTesting
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   
 end
